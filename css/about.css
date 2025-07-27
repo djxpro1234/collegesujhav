@@ -48,7 +48,7 @@ nav a:hover {
   gap: 50px;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: unwrap;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
@@ -226,7 +226,7 @@ nav a:hover {
 }
 
 
-/* Responsive adjustments for tablets and smaller devices */
+/* Tablets and below */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -235,12 +235,12 @@ nav a:hover {
   }
 
   .logo img {
-    height: 150px;
+    height: 120px;
     margin-bottom: 10px;
   }
 
   nav a {
-    margin: 10px 10px;
+    margin: 8px 0;
     display: block;
   }
 
@@ -250,25 +250,26 @@ nav a:hover {
   }
 
   .footer-right a {
-    margin-left: 0;
-    margin-top: 10px;
+    margin: 8px 0;
     display: block;
   }
 
-  .main-wrapper,
-  .blog-layout,
-  .terms-container {
-    flex-direction: column !important;
-    margin: 20px;
+  .main-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
   }
 
-  .image,
-  .image2,
-  .sidebar,
-  .post-content {
+  .image, .image2, .nested, .about-container {
     width: 100% !important;
+    max-width: 100% !important;
     margin: 0 auto !important;
+    padding: 20px !important;
+  }
+
+  .about-container {
+    padding: 30px !important;
   }
 
   .btn {
@@ -277,26 +278,37 @@ nav a:hover {
   }
 }
 
-/* For very small mobile devices */
+/* Phones and small screens */
 @media (max-width: 480px) {
-  h1 {
-    font-size: 22px;
+  .about-container h1 {
+    font-size: 30px;
   }
 
-  h2 {
-    font-size: 18px;
+  .about-container h2 {
+    font-size: 20px;
   }
 
-  .post-content {
-    flex-direction: column;
-  }
-
-  .post-content img {
-    width: 100%;
+  .about-container p, .about-container li {
+    font-size: 16px;
   }
 
   .btn {
-    padding: 10px 15px;
+    padding: 10px;
     font-size: 14px;
   }
+
+  .logo img {
+    height: 100px;
+  }
+
+  .whatsapp-float {
+    width: 40px;
+    height: 40px;
+  }
+
+  .whatsapp-float img {
+    width: 20px;
+    height: 20px;
+  }
 }
+
