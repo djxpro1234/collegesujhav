@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f77c1f;
+  padding: 10px 40px;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 250px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+  background: url("/assets/new.jpg") center/cover no-repeat;
+  height: 91.4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(231, 178, 178, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ef2d1f;
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #f7f7f7;
+}
+
+.btn:active {
+  background-color: #7cd95f;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fefefe;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  position: relative;
+}
+
+.footer-left {
+  color: #333;
+}
+
+.footer-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #2c3e50;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.footer-right a:hover {
+  color: #00bfa5;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.whatsapp-float img {
+  width: 24px;
+  height: 24px;
+}
+
+.blog-layout {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  font-family: 'Outfit', sans-serif;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.main-posts {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.post {
+  background: linear-gradient(#fffbfa, #e6b6a0);
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 10px;
+}
+
+.post h2 {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+}
+
+.post .date {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.post-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.post-content img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.post-content .text {
+  flex: 1;
+}
+
+.post-content p {
+  margin-bottom: 15px;
+}
+
+.post-content button {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar {
+  flex: 1;
+  background: linear-gradient(#fffbfa, #e6b6a0);
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.sidebar h3 {
+  background-color: #3a4bd4;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.sidebar li img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+
+/* Responsive adjustments for tablets and smaller devices */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    margin: 10px 10px;
+    display: block;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right a {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .main-wrapper,
+  .blog-layout,
+  .terms-container {
+    flex-direction: column !important;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .image,
+  .image2,
+  .sidebar,
+  .post-content {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .post-content {
+    flex-direction: column;
+  }
+
+  .post-content img {
+    width: 100%;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

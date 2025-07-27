@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border: #333 2px solid;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container h1 {
+  font-size: 40px;
+  color: #a363aa;
+  margin-bottom: 10px;
+}
+
+.welcome-container h1 span {
+  color: #ff914d;
+}
+
+.welcome-container p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  box-shadow: #333 10spx 10px 25px black
+}
+
+.btn:hover {
+  background-color: #ff914d;
+}
+
+/* Responsive adjustments for tablets and smaller devices */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    margin: 10px 10px;
+    display: block;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right a {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .main-wrapper,
+  .blog-layout,
+  .terms-container {
+    flex-direction: column !important;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .image,
+  .image2,
+  .sidebar,
+  .post-content {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .post-content {
+    flex-direction: column;
+  }
+
+  .post-content img {
+    width: 100%;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(#fffbfa, #e6b6a0);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f77c1f;
+  padding: 10px 40px;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 250px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: #ffffff;
+  color: hsl(0, 0%, 0%);
+  padding: 20px 40px;
+  font-size: 14px;
+  position: relative;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  flex: 1 1 50%;
+}
+
+.footer-right {
+  flex: 1 1 50%;
+  text-align: right;
+}
+
+.footer-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #2c3e50;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.footer-right a:hover {
+  color: #00bfa5;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.whatsapp-float img {
+  width: 24px;
+  height: 24px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-wrapper {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.container {
+  flex: 1 1 700px;
+  background-color: #fafafa;
+  border: rgb(255, 255, 255) 2px transparent solid;
+  border-radius: 10px;
+  padding: 40px 20px;
+}
+
+.contact-form {
+  flex: 1 1 250px;
+  background-color: #e6faff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+/* Responsive adjustments for tablets and smaller devices */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    margin: 10px 10px;
+    display: block;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right a {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .main-wrapper,
+  .blog-layout,
+  .terms-container {
+    flex-direction: column !important;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .image,
+  .image2,
+  .sidebar,
+  .post-content {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .post-content {
+    flex-direction: column;
+  }
+
+  .post-content img {
+    width: 100%;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
