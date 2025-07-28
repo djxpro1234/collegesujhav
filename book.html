@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Us | CollegeSujhav</title>
+  <title>Book-Conselling | CollegeSujhav</title>
+  <link rel="icon" href="/assets/chat.png" type="image/png" />
   <link rel="stylesheet" href="css/ok.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -26,8 +27,9 @@
       <p>We’re here to help! Fill out the form and we’ll get back to you within 24 hours.</p>
 
       <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-        <input type="hidden" name="access_key" value="220da9cc-85d1-4dcf-9b48-20c6c3e771e3">
-
+        <input type="hidden" name="access_key" value="40438262-ce96-4ad0-a2af-f7c744150e16">
+<!-- value="220da9cc-85d1-4dcf-9b48-20c6c3e771e3" -->
+<!-- value="40438262-ce96-4ad0-a2af-f7c744150e16" -->
         <label for="name">Your Name</label>
         <input type="text" name="name" id="name" required placeholder="Enter your name">
 
@@ -37,11 +39,16 @@
         <label for="Contact number">Your Contact Number</label>
         <input type="text" name="contact" id="contact" required placeholder="Enter your contact number">
 
-        <label for="message">Your Message</label>
-        <textarea name="message" id="message" rows="5" required placeholder="Type your message"></textarea>
+        <label for="Courses">Your Course</label>
+        <select id="Course" name="Course" placeholder="Courses" required>
+          <option value="" disabled selected hidden>Select your branch</option>
+          <option value="MBBS">MBBS</option>
+          <option value="BDS">BDS</option>
+          <option value="BAMS">BAMS</option>
+        </select>
 
         <button type="submit">Send Message</button>
-        <input type="hidden" name="redirect" value="http://127.0.0.1:5501/welcome.html">
+        <input type="hidden" name="redirect" value="/welcome.html">
 
       </form>
      </div>
