@@ -6,8 +6,46 @@
   <title>Terms and Conditions | CollegeSujhav</title>
   <link rel="icon" href="/assets/chat.png" type="image/png" />
   <link rel="stylesheet" href="/css/terms.css" />
+  <link rel="stylesheet" href="/css/pop.css" />
+  <link rel="stylesheet" href="/css/footer.css"/>
+  <script src="/js/pop.js" defer></script>
 </head>
 <body>
+
+  <div class="popup-overlay" id="popup">
+  <div class="popup-content">
+    <div class="popup-image">
+      <img src="/assets/pop.jpg" alt="Counseling Image" />
+    </div>
+    <div class="popup-box">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Book a Counselling Session</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="220da9cc-85d1-4dcf-9b48-20c6c3e771e3" />
+        
+        <label for="name">Your Name</label>
+        <input type="text" name="name" required placeholder="Enter your name" />
+
+        <label for="email">Your Email</label>
+        <input type="email" name="email" required placeholder="Enter your email" />
+
+        <label for="contact">Your Contact Number</label>
+        <input type="text" name="contact" required placeholder="Enter your contact number" />
+
+        <label for="Course">Your Course</label>
+        <select id="Course" name="Course" required>
+          <option value="" disabled selected hidden>Select your branch</option>
+          <option value="MBBS">MBBS</option>
+          <option value="BDS">BDS</option>
+          <option value="BAMS">BAMS</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <input type="hidden" name="redirect" value="/welcome.html" />
+      </form>
+    </div>
+  </div>
+  </div>
 
   <!-- Header -->
   <header>
@@ -127,22 +165,52 @@
     </section>
   </div>
 
-  <footer class="footer">
-  <div class="footer-left">
-    <p>Copyright © 2025 CollegeSujhav.in</p>
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-col2">
+      <a href="/index.html">
+      <img src="/assets/logo.png" alt="CollegeSujhav Logo">
+      </a>
+      <p>Since its founding in 2020, CollegeSujhav has grown into one of India’s trusted platforms <br> for student counseling and college selection services. Thousands of students who explored <br> colleges through CollegeSujhav have successfully secured admissions in top institutions across India. <br>
+        These students are now thriving in their chosen fields. We proudly partner with reputed universities and <br> medical colleges, offering accurate guidance and authentic admission support.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Get In Touch</h3>
+      <hr>
+      <p>Noida<br>Kanpur, MadhyaPradesh<br>Patna and Assam, India</p>
+      <p><a href="mailto:support@collegesujhav.in"><strong>support@collegesujhav.in</strong></a></p>
+      <p><strong>+91-8810342139</strong></p>
+    </div>
+
+    <div class="footer-col">
+      <h3>QuickLinks</h3>
+      <hr>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/terms.html">Terms</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Socials</h3>
+      <hr>
+      <div class="social-icons">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png"/></a>
+      </div>
+    </div>
   </div>
-  <div class="footer-right">
-    <a href="/about.html">About Us</a>
-    <a href="/contact.html">Contact Us</a>
-    <a href="/terms.html">Terms</a>
-    <a href="/privacy.html">Privacy Policy</a>
-  </div>
+</footer>
 
   <!-- WhatsApp Button -->
   <a href="https://wa.me/918810342139" class="whatsapp-float" target="_blank">
     <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
   </a>
-  </footer>
 
 </body>
 </html>

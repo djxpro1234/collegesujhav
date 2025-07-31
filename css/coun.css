@@ -24,7 +24,7 @@ header {
 }
 
 .logo img {
-  height: 250px;
+  height: 80px;
   margin-right: 10px;
 }
 
@@ -46,34 +46,6 @@ nav a:hover {
 h1 {
   font-size: 28px;
   margin-bottom: 40px;
-}
-
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background-color: #fefefe;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
-  font-size: 14px;
-  position: relative;
-}
-
-.footer-left {
-  color: #333;
-}
-
-.footer-right a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #2c3e50;
-  transition: color 0.3s;
-  font-weight: 500;
-}
-
-.footer-right a:hover {
-  color: #00bfa5;
 }
 
 /* WhatsApp Floating Button */
@@ -195,22 +167,7 @@ p {
     margin: 10px 10px;
     display: block;
   }
-
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
   
-  .footer-right{
-    align-items: center;
-  }
-
-  .footer-right a {
-    margin-left: 0;
-    margin-top: 10px;
-    display: block;
-  }
-
   .main-wrapper,
   .blog-layout,
   .terms-container {

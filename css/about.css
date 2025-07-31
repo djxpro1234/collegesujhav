@@ -25,7 +25,7 @@ header {
 }
 
 .logo img {
-  height: 250px;
+  height: 80px;
   margin-right: 10px;
 }
 
@@ -138,33 +138,7 @@ nav a:hover {
   color: #222;
 }
 
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background-color: #fefefe;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
-  font-size: 14px;
-  position: relative;
-}
 
-.footer-left {
-  color: #333;
-}
-
-.footer-right a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #2c3e50;
-  transition: color 0.3s;
-  font-weight: 500;
-}
-
-.footer-right a:hover {
-  color: #00bfa5;
-}
 
 /* WhatsApp Floating Button */
 .whatsapp-float {
@@ -225,7 +199,6 @@ nav a:hover {
   text-align: left;
 }
 
-
 /* Tablets and below */
 @media (max-width: 768px) {
   header {
@@ -240,16 +213,6 @@ nav a:hover {
   }
 
   nav a {
-    margin: 8px 0;
-    display: block;
-  }
-
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-right a {
     margin: 8px 0;
     display: block;
   }
@@ -296,10 +259,6 @@ nav a:hover {
     padding: 10px;
     font-size: 14px;
   }
-
-  /* .logo img {
-    height: 100px;
-  } */
 
   .whatsapp-float {
     width: 40px;

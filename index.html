@@ -6,8 +6,47 @@
   <title>CollegeSujhav - Your Trusted Path to College and Beyond</title>
   <link rel="icon" href="/assets/chat.png" type="image/png"/>
   <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/pop.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <script src="/js/pop.js" defer></script>
+
 </head>
 <body>
+
+  <div class="popup-overlay" id="popup">
+  <div class="popup-content">
+    <div class="popup-image">
+      <img src="/assets/pop.jpg" alt="Counseling Image" />
+    </div>
+    <div class="popup-box">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Book a Counselling Session</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="220da9cc-85d1-4dcf-9b48-20c6c3e771e3" />
+        
+        <label for="name">Your Name</label>
+        <input type="text" name="name" required placeholder="Enter your name" />
+
+        <label for="email">Your Email</label>
+        <input type="email" name="email" required placeholder="Enter your email" />
+
+        <label for="contact">Your Contact Number</label>
+        <input type="text" name="contact" required placeholder="Enter your contact number" />
+
+        <label for="Course">Your Course</label>
+        <select id="Course" name="Course" required>
+          <option value="" disabled selected hidden>Select your branch</option>
+          <option value="MBBS">MBBS</option>
+          <option value="BDS">BDS</option>
+          <option value="BAMS">BAMS</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <input type="hidden" name="redirect" value="/welcome.html" />
+      </form>
+    </div>
+  </div>
+  </div>  
 
   <!-- Header -->
   <header>
@@ -30,16 +69,141 @@
     </div>
   </section>
 
-  <footer class="footer"> 
-  <div class="footer-left">
-    <p>Copyright © 2025 CollegeSujhav.in</p>
+<section class="about-section">
+  <div class="about-content">
+    <h2>About CollegeSujhav</h2>
+    <p>Since its founding in 2020, CollegeSujhav has grown into one of India’s trusted platforms for student counseling and college selection services. Thousands of students who explored colleges through CollegeSujhav have successfully secured admissions in top institutions across India These students are now thriving in their chosen fields. We proudly partner with reputed universities and medical colleges, offering accurate guidance and authentic admission support.</p> <br> 
+      <h1>Our Values:</h1>
+      <p><strong>Student-First Always:</strong>
+Every recommendation we give is based on what's best for the student — not what’s trending or paid for. <br>
+
+<strong>Transparency & Truth:</strong>
+We believe in showing the real picture. From placements to infrastructure, our data is verified and not sugar-coated. <br>
+
+<strong>Simplicity Over Noise:</strong>
+With thousands of colleges and complex processes, we make it simple to understand and act — even if you’re the first in your family to go to college. <br>
+
+<strong>Empathy:</strong>
+We’ve been there. Confused, stressed, and unsure. Our platform is built to make you feel understood and supported. </p>
   </div>
-  <div class="footer-right">
-    <a href="/about.html">About Us</a>
-    <a href="/contact.html">Contact Us</a>
-    <a href="/terms.html">Terms</a>
-    <a href="/privacy.html">Privacy Policy</a>
+
+  <div class="about-image">
+    <img src="/assets/about.jpg" alt="About CollegeSujhav">
   </div>
+</section>
+
+<section class="abou2-section">
+  <div class="about-image">
+    <img src="/assets/feature2.jpg" alt="About CollegeSujhav">
+  </div>
+
+  <div class="abou2-content">
+    <h2>Why You Should Trust Us CollegeSujhav</h2>
+    <p>A Leading Education Consultancy In India, CollegeAddmission Has Successfully Placed Thousands Of Students In Many Illustrious Universities All Over The World – A Feat That Can Be Ascribed To Our Methodical Mapping Of Geographical Locations, Institutions And Courses As Appropriate To The Applicant’s Profile.</p>
+    <p>We are a team of experienced counselors and faculty members who provide personalized support throughout your academic journey. Our verified information ensures you have access to accurate, up-to-date data about colleges, courses, fees, and cut-offs to help you make informed decisions.</p>
+    <p>Thousands of students have been successfully placed in numerous prestigious universities across the globe by CollegeSujhav, a leading education consulting firm in India. This accomplishment can be attributed to our meticulous mapping of geographic locations, institutions, and courses that are appropriate for each applicant's profile.
+    </p>
+  </div>
+
+</section>
+
+<section class="courses-section">
+  <h5 class="subtitle">OUR COURSES</h5>
+  <h2 class="main-title">Provide Counseling on Courses</h2>
+
+  <div class="courses-container">
+    <!-- MBBS -->
+    <div class="course-card">
+      <img src="/assets/med.jpg" alt="MBBS Course">
+      <div class="course-content">
+        <h3>MBBS Course: A Comprehensive Guide to Pursuing a Career in Medicine</h3>
+        <div class="course-meta">
+          <span>👨‍⚕️ NEET</span>
+          <span>⭐ 4.5 (250)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- B.Tech -->
+    <div class="course-card">
+      <img src="/assets/ayur.jpg" alt="ayurveda Course">
+      <div class="course-content">
+        <h3>BAMS Course: This is a 5.5 years undergraduate program in Ayurveda.</h3>
+        <div class="course-meta">
+          <span>👨‍⚕️ NEET</span>
+          <span>⭐ 4.5 (250)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- LLB -->
+    <div class="course-card">
+      <img src="/assets/homoe.jpg" alt="Homoepathy Course">
+      <div class="course-content">
+        <h3>BHMS Course: The BHMS program is a 5.5 undergraduate program.</h3>
+        <div class="course-meta">
+          <span>👨‍⚕️ NEET</span>
+          <span>⭐ 4.5 (250)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MBA -->
+    <div class="course-card">
+      <img src="/assets/dent.jpg" alt="dental Course">
+      <div class="course-content">
+        <h3>BDS Course: This is a professional undergraduate program in dentistry.</h3>
+        <div class="course-meta">
+          <span>👨‍⚕️ NEET</span>
+          <span>⭐ 4.5 (250)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-col2">
+      <a href="/index.html">
+      <img src="/assets/logo.png" alt="CollegeSujhav Logo">
+      </a>
+      <p>Since its founding in 2020, CollegeSujhav has grown into one of India’s trusted platforms <br> for student counseling and college selection services. Thousands of students who explored <br> colleges through CollegeSujhav have successfully secured admissions in top institutions across India. <br>
+        These students are now thriving in their chosen fields. We proudly partner with reputed universities and <br> medical colleges, offering accurate guidance and authentic admission support.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Get In Touch</h3>
+      <hr>
+      <p>Noida<br>Kanpur, MadhyaPradesh<br>Patna and Assam, India</p>
+      <p><a href="mailto:support@collegesujhav.in"><strong>support@collegesujhav.in</strong></a></p>
+      <p><strong>+91-8810342139</strong></p>
+    </div>
+
+    <div class="footer-col">
+      <h3>QuickLinks</h3>
+      <hr>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/terms.html">Terms</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Socials</h3>
+      <hr>
+      <div class="social-icons">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png"/></a>
+      </div>
+    </div>
+  </div>
+</footer>
 
   <!-- WhatsApp Button -->
   <a href="https://wa.me/918810342139" class="whatsapp-float" target="_blank">
