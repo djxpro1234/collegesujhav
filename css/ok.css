@@ -112,34 +112,6 @@ nav a:hover {
   background-color: #e96b0c;
 }
 
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background-color: #fefefe;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
-  font-size: 14px;
-  position: relative;
-}
-
-.footer-left {
-  color: #333;
-}
-
-.footer-right a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #2c3e50;
-  transition: color 0.3s;
-  font-weight: 500;
-}
-
-.footer-right a:hover {
-  color: #00bfa5;
-}
-
 /* WhatsApp Floating Button */
 .whatsapp-float {
   position: fixed;
@@ -209,33 +181,6 @@ nav a:hover {
     display: block;
   }
 
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-right a {
-    margin-left: 0;
-    margin-top: 10px;
-    display: block;
-  }
-
-  .main-wrapper,
-  .blog-layout,
-  .terms-container {
-    flex-direction: column !important;
-    margin: 20px;
-    padding: 20px;
-  }
-
-  .image,
-  .image2,
-  .sidebar,
-  .post-content {
-    width: 100% !important;
-    margin: 0 auto !important;
-  }
-
   .btn {
     width: 100%;
     text-align: center;
@@ -251,15 +196,7 @@ nav a:hover {
   h2 {
     font-size: 18px;
   }
-
-  .post-content {
-    flex-direction: column;
-  }
-
-  .post-content img {
-    width: 100%;
-  }
-
+  
   .btn {
     padding: 10px 15px;
     font-size: 14px;
