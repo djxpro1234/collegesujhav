@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/about.css">
   <link rel="stylesheet" href="/css/pop.css" />
   <link rel="stylesheet" href="/css/footer.css"/>
+  <link rel="stylesheet" href="/css/header.css" />
   <script src="/js/pop.js" defer></script>
 </head>
 <body>
@@ -48,17 +49,23 @@
   </div>
   </div>
 
-  <header>
-    <a class="logo" href="/index.html#">
-      <img src="/assets/logo.png" alt="CollegeSujhav Logo" />
+<header class="site-header">
+  <div class="container">
+    <a href="/index.html" class="logo">
+      <img src="/assets/logo.png" alt="College Admissions Logo">
     </a>
-    <nav>
-      <a href="/index.html#">Home</a>
-      <a href="/about.html">About us</a>
-      <a href="/college.html">Colleges</a>
-      <a href="/contact.html">Contact us</a>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/college.html">Colleges</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
     </nav>
-  </header>
+  </div>
+</header>
+
   <div class="main-wrapper">
    <div class="about-container">
     <h1>✨ About Us – CollegeSujhav</h1>
@@ -103,17 +110,6 @@
       <p>🧭 Your future starts with the right choice. Let’s make it together.</p>
     </footer>
    </div>
-  <div class="nested">
-   <div class="image2">
-    <p class="counseling-text">Need personalized guidance? Book a free session now!</p>
-    <a href="/book.html">
-      <button class="btn">Book Counseling</button>
-    </a>
-   </div>
-   <div class="image">
-    <img src="/assets/jj.png" alt="About CollegeSujhav">
-   </div>
-  </div>
   </div>
 
 <footer class="main-footer">

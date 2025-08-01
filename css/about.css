@@ -6,46 +6,12 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  background: linear-gradient(#fffbfa, #e6b6a0);
   color: #333;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f77c1f;
-  padding: 10px 40px;
-  height: 80px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 80px;
-  margin-right: 10px;
-}
-
-nav a {
-  margin-left: 30px;
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  font-weight: 500;
-  border: 2px solid transparent;
-  border-radius: 20px;
-  transition: background-color 0.3s;
-}
-
-nav a:hover {
-  background-color: #ffffff;
-}
 .main-wrapper {
   display: flex;
-  gap: 50px;
+  gap: 10px;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -53,7 +19,7 @@ nav a:hover {
 }
 
 .about-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin-left: 30px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -70,7 +36,6 @@ nav a:hover {
   align-self: flex-start;
 
 }
-
 .image2 {
   margin-right: 40px;
   margin-top: 40px;
@@ -91,7 +56,7 @@ nav a:hover {
 
 .about-container h1 {
   font-size: 50px;
-  color: #dc7311;
+  color: #ff9090;
   margin-bottom: 10px;
 }
 
@@ -137,8 +102,6 @@ nav a:hover {
   text-align: center;
   color: #222;
 }
-
-
 
 /* WhatsApp Floating Button */
 .whatsapp-float {

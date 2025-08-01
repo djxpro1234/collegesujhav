@@ -1,0 +1,134 @@
+/* Base Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.site-header {
+  background-color: #fce2e2;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 70px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: flex-start;
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu a:hover {
+  background-color: #f8d5d5;
+}
+
+.nav-menu a, .dropdown-toggle {
+  text-decoration: none;
+  /* padding: 10px 15px; */
+  display: block;
+  color: #000;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 33px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 33px;
+  transition: background-color 0.5s;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  min-width: 150px;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-right: 40px;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-top: 10px;
+  }
+
+  .nav-menu.open {
+    display: block;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown-menu {
+    position: static;
+    border: none;
+    background: #ddd;
+    margin-left: 20px;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+}

@@ -1,5 +1,5 @@
 .main-footer {
-  background: linear-gradient(to right, #f08533, #be6a21, #682300);
+  background: rgb(88, 52, 52);
   color: rgb(255, 255, 255);
   padding: 60px 40px;
   font-family: 'Segoe UI', sans-serif;
@@ -13,17 +13,17 @@
 }
 
 .footer-col hr {
-    border: 2px solid #000000;
+    border: 2px solid #ffffff;
     border-radius: 10px;
     height: 1px;
-    background-color: #000000;
+    background-color: #ffffff;
     margin: 20px 0px;
 }
 
 .footer-col h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #000000;
+  color: #ffffff;
 }
 .footer-col {
   flex: 1 1 200px;

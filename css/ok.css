@@ -7,41 +7,6 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  background: linear-gradient(to bottom, #fff4ed, #ffe0c2);
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f77c1f;
-  padding: 10px 40px;
-  height: 80px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 80px;
-  margin-right: 10px;
-}
-
-nav a {
-  margin-left: 30px;
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  font-weight: 500;
-  border: 2px solid transparent;
-  border-radius: 20px;
-  transition: background-color 0.3s;
-}
-
-nav a:hover {
-  background-color: #ffffff;
 }
 
 /* Contact Section */
@@ -55,7 +20,7 @@ nav a:hover {
 }
 
 .contact-container {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 40px;
   border-radius: 12px;
   max-width: 600px;
@@ -65,7 +30,7 @@ nav a:hover {
 
 .contact-container h1 {
   font-size: 28px;
-  color: #f77c1f;
+  color: #f4997e;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -74,14 +39,14 @@ nav a:hover {
   text-align: center;
   margin-bottom: 30px;
   font-size: 16px;
-  color: #555;
+  color: #df7171;
 }
 
 .contact-form label {
   display: block;
   margin-bottom: 5px;
   font-weight: 500;
-  color: #333;
+  color: #ee9b7c;
 }
 
 .contact-form input,
@@ -97,7 +62,7 @@ nav a:hover {
 
 .contact-form button {
   width: 100%;
-  background-color: #f77c1f;
+  background-color: #f0816d;
   color: white;
   border: none;
   padding: 14px;

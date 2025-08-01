@@ -6,46 +6,141 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  background: linear-gradient(#fffbfa, #e6b6a0);
 }
 
-header {
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.contact-section {
+  padding-top: 50px;
+  padding-bottom: 98px;
+  background: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f77c1f;
-  padding: 10px 40px;
-  height: 80px;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.logo {
+.contact-info {
+  background: #eef5ff;
+  flex: 1;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.info-box {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 30px;
 }
 
-.logo img {
-  height: 80px;
-  margin-right: 10px;
-}
-
-nav a {
-  margin-left: 30px;
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  font-weight: 500;
-  border: 2px solid transparent;
-  border-radius: 20px;
-  transition: background-color 0.3s;
-}
-
-nav a:hover {
-  background-color: #ffffff;
-}
-
-h1 {
+.icon {
+  width: 70px;
+  height: 70px;
   font-size: 28px;
-  margin-bottom: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+
+.icon.blue { background: url("/assets/image.png")}
+.icon.red { background: url("/assets/image2.png")}
+.icon.yellow { background: url("/assets/image3.png")} 
+
+.info-box h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.info-box p {
+  margin: 5px 0 0;
+  color: #444;
+  font-size: 14px;
+}
+
+.contact-form {
+  flex: 2;
+  padding: 20px;
+}
+
+.contact-form .sub-heading {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px dashed red;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.contact-form h2 {
+  font-size: 32px;
+  color: #0f0f28;
+  margin-bottom: 25px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form .row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  flex: 1;
+  min-width: 180px;
+  outline: none;
+}
+
+.contact-form textarea {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background-color: #287bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.contact-form button:hover {
+  background-color: #1a5fd6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
 }
 
 /* WhatsApp Floating Button */
@@ -68,149 +163,3 @@ h1 {
   width: 24px;
   height: 24px;
 }
-
-h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.section {
-  margin-bottom: 40px;
-}
-
-.section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.section ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.section ul li {
-  margin-bottom: 10px;
-}
-
-.contact-form h2 {
-  margin-bottom: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.contact-form button {
-  background-color: orange;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.main-wrapper {
-  display: flex;
-  gap: 50px;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding: 0 20px;
-  margin-bottom: 60px;
-}
-
-.container {
-  flex: 1 1 700px;
-  background-color: #fafafa;
-  border: rgb(255, 255, 255) 2px transparent solid;
-  border-radius: 10px;
-  padding: 40px 20px;
-}
-
-.contact-form {
-  flex: 1 1 250px;
-  background-color: #e6faff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
-  height: fit-content;
-}
-
-/* Responsive adjustments for tablets and smaller devices */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-  }
-
-  .logo img {
-    height: 150px;
-    margin-bottom: 10px;
-  }
-
-  nav a {
-    margin: 10px 10px;
-    display: block;
-  }
-  
-  .main-wrapper,
-  .blog-layout,
-  .terms-container {
-    flex-direction: column !important;
-    margin: 20px;
-    padding: 20px;
-  }
-
-  .image,
-  .image2,
-  .sidebar,
-  .post-content {
-    width: 100% !important;
-    margin: 0 auto !important;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-/* For very small mobile devices */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 22px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  .post-content {
-    flex-direction: column;
-  }
-
-  .post-content img {
-    width: 100%;
-  }
-
-  .btn {
-    padding: 10px 15px;
-    font-size: 14px;
-  }
-}
-

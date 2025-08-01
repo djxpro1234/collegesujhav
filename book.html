@@ -6,21 +6,27 @@
   <link rel="icon" href="/assets/chat.png" type="image/png" />
   <link rel="stylesheet" href="/css/ok.css">
   <link rel="stylesheet" href="/css/footer.css"/>
+  <link rel="stylesheet" href="/css/header.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-  <header>
-    <a class="logo" href="/index.html#">
-      <img src="/assets/logo.png" alt="CollegeSujhav Logo" />
+<header class="site-header">
+  <div class="container">
+    <a href="/index.html" class="logo">
+      <img src="/assets/logo.png" alt="College Admissions Logo">
     </a>
-    <nav>
-      <a href="/index.html#">Home</a>
-      <a href="/about.html">About us</a>
-      <a href="/college.html">Colleges</a>
-      <a href="/contact.html">Contact us</a>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/college.html">Colleges</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
     </nav>
-  </header>
+  </div>
+</header>
 
     <section class="contact-section">
      <div class="contact-container">
@@ -46,6 +52,7 @@
           <option value="MBBS">MBBS</option>
           <option value="BDS">BDS</option>
           <option value="BAMS">BAMS</option>
+          <option value="BHMS">BHMS</option>
         </select>
 
         <button type="submit">Send Message</button>

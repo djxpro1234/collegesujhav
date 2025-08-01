@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="/css/coun.css">
   <link rel="stylesheet" href="/css/pop.css" />
   <link rel="stylesheet" href="/css/footer.css"/>
+  <link rel="stylesheet" href="/css/header.css" />
   <script src="/js/pop.js" defer></script>
 </head>
 <body>
@@ -48,54 +49,24 @@
   </div>
   </div>
 
-  <header>
-    <a class="logo" href="/index.html#">
-      <img src="/assets/logo.png" alt="CollegeSujhav Logo" />
+<header class="site-header">
+  <div class="container">
+    <a href="/index.html" class="logo">
+      <img src="/assets/logo.png" alt="College Admissions Logo">
     </a>
-    <nav>
-      <a href="/index.html#">Home</a>
-      <a href="/about.html">About us</a>
-      <a href="/college.html">Colleges</a>
-      <a href="/contact.html">Contact us</a>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/college.html">Colleges</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
     </nav>
-  </header>
-
-  <div class="main-wrapper">
-   <div class="container">
-    <h1>Contact Us</h1>
-    <p>
-      Got questions about college admissions, courses, or documentation? We’re here to help! At CollegeSujhav, we’re committed to guide students and parents with clear, trustworthy advice throughout every step of the admission journey.  </p>
-
-    <p>Whether you need detailed guidance or just want to clarify a doubt, feel free to reach out to us using any of the methods below.</p>
-  
-    <div class="section">
-      <h2>📞 Call Us Directly</h2>
-      <ul>
-        <li><strong>Phone:</strong> +91 8810342139</li>
-        <li><strong>Timings:</strong> 10:00 AM – 6:00 PM (Mon–Sat)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>💬 Chat With Us on WhatsApp</h2>
-      <ul>
-        <li>Quick question? Message us now.</li>
-        <li>
-          <a href="https://wa.me/918810342139" target="_blank">Click here to chat</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>📧 Email Support</h2>
-      <ul>
-        <li>Prefer email? Reach out and we’ll respond within 24 hours.</li>
-        <li><strong>Email:</strong> support@CollegeSujhav.in</li>
-      </ul>
-    </div>
   </div>
+</header>
 
-  <div class="contact-form">
+  <!-- <div class="contact-form">
     <h2>📩 Contact Form</h2>
     <form action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="220da9cc-85d1-4dcf-9b48-20c6c3e771e3">
@@ -106,7 +77,61 @@
       <input type="hidden" name="redirect" value="/welcome.html">
     </form>
   </div>
+  </div>  -->
+
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info">
+      <div class="info-box">
+        <div class="icon blue"><i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <h4>Our Location</h4>
+          <p>Noida, Bengaluru, Maharashtra,<br>Bihar</p>
+        </div>
+      </div>
+      <div class="info-box">
+        <div class="icon red"><i class="fas fa-phone-alt"></i></div>
+        <div>
+          <h4>Call Us</h4>
+          <p>+91-8810342139</p>
+        </div>
+      </div>
+      <div class="info-box">
+        <div class="icon yellow"><i class="fas fa-envelope"></i></div>
+        <div>
+          <h4>Email Us</h4>
+          <p>support@collegeadmissions.in</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <p class="sub-heading">NEED HELP?</p>
+      <h2>Send Us A Message</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="220da9cc-85d1-4dcf-9b48-20c6c3e771e3">
+        <div class="row">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="mobile" placeholder="Your Mobile" required>
+        </div>
+        <div class="row">
+          <input type="email" name="email" placeholder="Your Email" required>
+          <select name="course" required>
+            <option value="" disabled selected>Select Course</option>
+            <option value="MBBS">MBBS</option>
+            <option value="BDS">BDS</option>
+            <option value="BAMS">BAMS</option>
+            <option value="BHMS">BHMS</option>
+          </select>
+        </div>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send Message</button>
+        <input type="hidden" name="redirect" value="/welcome.html">
+      </form>
+    </div>
   </div>
+</section>
+
 
 <footer class="main-footer">
   <div class="footer-container">
