@@ -78,7 +78,7 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #f8d5d5;
   border: 1px solid #ddd;
   top: 100%;
   left: 0;
@@ -105,7 +105,7 @@ body {
   .nav-menu {
     display: none;
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #fce2e2;
     margin-top: 10px;
   }
 
