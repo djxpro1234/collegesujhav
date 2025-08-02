@@ -78,7 +78,7 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #f8d5d5;
+  background-color: #fce2e2;
   border: 1px solid #ddd;
   top: 100%;
   left: 0;
@@ -93,6 +93,16 @@ body {
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.dropdown button {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Hide dropdown by default */
+.dropdown .dropdown-menu {
+  display: none;
 }
 
 /* MOBILE VIEW */
@@ -130,5 +140,9 @@ body {
 
   .dropdown.open .dropdown-menu {
     display: block;
+  }
+  
+  .dropdown button{
+    margin-left: 155px;
   }
 }

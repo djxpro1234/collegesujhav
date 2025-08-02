@@ -22,3 +22,5 @@ dropdownToggles.forEach(toggle => {
     parent.classList.toggle('open');
   });
 });
+
+

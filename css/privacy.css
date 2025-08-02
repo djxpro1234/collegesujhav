@@ -42,12 +42,12 @@ p {
   line-height: 1.6;
 }
 
-ul {
+.policy-container ul {
   margin-top: 10px;
   padding-left: 20px;
 }
 
-ul li {
+.policy-container ul li {
   margin-bottom: 6px;
 }
 

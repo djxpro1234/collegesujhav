@@ -235,6 +235,10 @@ body {
   color: #ccc;
 }
 
+.course-card a {
+  text-decoration: none;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .course-card {

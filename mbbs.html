@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MBBS Course Detail</title>
+  <link rel="icon" href="/assets/chat.png" type="image/png"/>
+  <link rel="stylesheet" href="/css/style2.css" />
+  <link rel="stylesheet" href="/css/pop.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="/css/header.css" />
+  <script src="/js/pop.js" defer></script>
+
+</head>
+<body>
+
+  <div class="popup-overlay" id="popup">
+  <div class="popup-content">
+    <div class="popup-image"> 
+      <img src="/assets/pop.jpg" alt="Counseling Image" />
+    </div>
+    <div class="popup-box">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Book a Counselling Session</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="220da9cc-85d1-4dcf-9b48-20c6c3e771e3" />
+        
+        <label for="name">Your Name</label>
+        <input type="text" name="name" required placeholder="Enter your name" />
+
+        <label for="email">Your Email</label>
+        <input type="email" name="email" required placeholder="Enter your email" />
+
+        <label for="contact">Your Contact Number</label>
+        <input type="text" name="contact" required placeholder="Enter your contact number" />
+
+        <label for="Course">Your Course</label>
+        <select id="Course" name="Course" required>
+          <option value="" disabled selected hidden>Select your branch</option>
+          <option value="MBBS">MBBS</option>
+          <option value="BDS">BDS</option>
+          <option value="BAMS">BAMS</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <input type="hidden" name="redirect" value="/welcome.html" />
+      </form>
+    </div>
+  </div>
+  </div>  
+
+  <!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <a href="/index.html" class="logo">
+      <img src="/assets/logo.png" alt="College Admissions Logo">
+    </a>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li class="dropdown">
+          <button class="dropdown-toggle">Courses</button>
+          <ul class="dropdown-menu">
+            <li><a href="/mbbs.html">MBBS</a></li>
+            <li><a href="/bds.html">BDS</a></li>
+            <li><a href="/bams.html">BAMS</a></li>
+            <li><a href="/bhms.html">BHMS</a></li>
+          </ul>
+        </li>
+        <li><a href="/college.html">Colleges</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="course-detail-container">
+
+  <!-- Left Section -->
+  <div class="course-content">
+    <h5 class="breadcrumb">Course Detail</h5>
+    <h1 class="main-heading">MBBS</h1>
+    <img src="/assets/header.jpg" alt="MBBS Students" class="banner-img"/>
+
+<h3>MBBS Course: A Comprehensive Guide to Pursuing a Career in Medicine</h3>
+<p>Are you considering a career in medicine? Pursuing an MBBS (Bachelor of Medicine and Bachelor of Surgery) degree is an excellent choice for those who are passionate about healing and helping others. In this comprehensive guide, we will cover everything you need to know about the MBBS course, including its eligibility criteria, admission process, curriculum, career prospects, and much more.</p>
+
+<h3>Eligibility Criteria for MBBS</h3>
+<p>To be eligible for an MBBS course, a candidate must have completed their higher secondary education (10+2) with physics, chemistry, and biology as their core subjects. Additionally, they should have scored at least 50% marks in their qualifying examination, and must have cleared the NEET (National Eligibility cum Entrance Test) conducted by the National Testing Agency (NTA).</p>
+
+<h3>Admission Process</h3>
+<p>The admission process for the MBBS course usually starts in the month of June or July every year. Candidates can apply for the course through various entrance exams including NEET, AIIMS (All India Institute of Medical Sciences) entrance exam, and JIPMER (Jawaharlal Institute of Postgraduate Medical Education and Research) entrance exam. The selection process for the MBBS course typically involves a written examination followed by a counseling session.</p>
+
+<h3>MBBS Course Curriculum</h3>
+<p>The MBBS course is designed to provide students with an in-depth understanding of various medical subjects and their practical applications. The course curriculum is divided into four major categories:</p>
+
+<h3>Preclinical Subjects</h3>
+<p>In the preclinical subjects, students are taught about the basic sciences of medicine, including anatomy, physiology, and biochemistry. These subjects are essential for understanding the structure and functions of the human body and serve as the foundation for all subsequent subjects.</p>
+
+<h3>Para-Clinical Subjects</h3>
+<p>In the para-clinical subjects, students are taught about the diagnostic and therapeutic aspects of medicine. These subjects include microbiology, pharmacology, and pathology, among others.</p>
+
+<h3>Clinical Subjects</h3>
+<p>In the clinical subjects, students learn about the various medical specialties, including surgery, medicine, pediatrics, obstetrics and gynecology, psychiatry, and more. These subjects provide students with hands-on training in diagnosing and treating patients in real-world scenarios.</p>
+
+<h3>Elective Subjects</h3>
+<p>In the elective subjects, students have the opportunity to specialize in a specific area of medicine, such as cardiology, neurology, oncology, or dermatology, among others.</p>
+
+<h3>MBBS Course Duration and Fees</h3>
+<p>The duration of the MBBS course is typically five and a half years, including one year of compulsory internship. The fees for the course vary depending on the college and location, with government colleges charging a nominal fee compared to private colleges.</p>
+
+<h3>Career Prospects for MBBS Graduates</h3>
+<p>After completing the MBBS course, graduates can choose to:</p>
+<p>– Practice as general physicians<br>
+– Specialize further through postgraduate programs (MD/MS)<br>
+– Work in government or private hospitals<br>
+– Pursue careers in medical research or academics<br>
+– Serve in healthcare NGOs or international medical organizations</p>
+
+
+</div>
+
+  <!-- Right Sidebar -->
+  <aside class="sidebar">
+    <div class="features-box">
+      <h3>Course Features</h3>
+      <p><strong>College Type:</strong> Private</p>
+      <p><strong>Rating:</strong> 4.5</p>
+      <p><strong>Entrance Exam:</strong> NEET</p>
+      <p><strong>Skill Level:</strong> All Level</p>
+      <p><strong>Duration:</strong> 5 Years</p>
+      <p><strong>Language:</strong> English</p>
+      <button>Contact Us</button>
+    </div>
+
+    <div class="recent-courses">
+      <h3>Recent Courses</h3>
+      <a href="/bams.html">
+      <div class="mini-card">
+        <img src="/assets/ayur.jpg" alt="BAMS">
+        <div>
+          <h4>BAMS</h4>
+          <p>⭐ 4.5 NEET</p>
+        </div>
+      </div>
+      </a>
+      <a href="/bds.html">
+      <div class="mini-card">
+        <img src="/assets/dent.jpg" alt="BDS">
+        <div>
+          <h4>BDS</h4>
+          <p>⭐ 4.5 NEET</p>
+        </div>
+      </div>
+      </a>
+      <a href="/bhms.html">
+      <div class="mini-card">
+        <img src="/assets/homoe.jpg" alt="Homoeopathy">
+        <div>
+          <h4>Homoeopathy</h4>
+          <p>⭐ 4.5 NEET</p>
+        </div>
+      </div>
+      </a>
+    </div>
+  </aside>
+
+</div>
+
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-col2">
+      <a href="/index.html">
+      <img src="/assets/logo.png" alt="CollegeSujhav Logo">
+      </a>
+      <p>Since its founding in 2020, CollegeSujhav has grown into one of India’s trusted platforms <br> for student counseling and college selection services. Thousands of students who explored <br> colleges through CollegeSujhav have successfully secured admissions in top institutions across India. <br>
+        These students are now thriving in their chosen fields. We proudly partner with reputed universities and <br> medical colleges, offering accurate guidance and authentic admission support.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Get In Touch</h3>
+      <hr>
+      <p>Noida<br>Kanpur, MadhyaPradesh<br>Patna and Assam, India</p>
+      <p><a href="mailto:support@collegesujhav.in"><strong>support@collegesujhav.in</strong></a></p>
+      <p><strong>+91-8810342139</strong></p>
+    </div>
+
+    <div class="footer-col">
+      <h3>QuickLinks</h3>
+      <hr>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/terms.html">Terms</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Socials</h3>
+      <hr>
+      <div class="social-icons">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png"/></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- WhatsApp Button -->
+<a href="https://wa.me/918810342139" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
+</a>
+
+
+</body>
+</html>

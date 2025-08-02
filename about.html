@@ -6,7 +6,7 @@
   <title>About Us | CollegeSujhav</title>
   <link rel="icon" href="/assets/chat.png" type="image/png" />
   <!-- <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet"> -->
-  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/pop.css" />
   <link rel="stylesheet" href="/css/footer.css"/>
   <link rel="stylesheet" href="/css/header.css" />
@@ -54,11 +54,20 @@
     <a href="/index.html" class="logo">
       <img src="/assets/logo.png" alt="College Admissions Logo">
     </a>
-    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <button class="menu-toggle" id="menuToggle">☰</button>
     <nav class="nav-menu" id="navMenu">
       <ul>
-        <li><a href="/index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="/about.html">About Us</a></li>
+        <li class="dropdown">
+          <button class="dropdown-toggle">Courses</button>
+          <ul class="dropdown-menu">
+            <li><a href="/mbbs.html">MBBS</a></li>
+            <li><a href="/bds.html">BDS</a></li>
+            <li><a href="/bams.html">BAMS</a></li>
+            <li><a href="/bhms.html">BHMS</a></li>
+          </ul>
+        </li>
         <li><a href="/college.html">Colleges</a></li>
         <li><a href="/contact.html">Contact Us</a></li>
       </ul>
@@ -66,51 +75,112 @@
   </div>
 </header>
 
-  <div class="main-wrapper">
-   <div class="about-container">
-    <h1>✨ About Us – CollegeSujhav</h1>
-    <p class="tagline">Helping You Choose the Right College with Confidence</p>
+<section class="about-section">
+  <div class="about-content">
+    <h2>About CollegeSujhav</h2>
+    <p>Since its founding in 2020, CollegeSujhav has grown into one of India’s trusted platforms for student counseling and college selection services. Thousands of students who explored colleges through CollegeSujhav have successfully secured admissions in top institutions across India These students are now thriving in their chosen fields. We proudly partner with reputed universities and medical colleges, offering accurate guidance and authentic admission support.</p> <br> 
+      <h1>Our Values:</h1>
+      <p><strong>Student-First Always:</strong>
+Every recommendation we give is based on what's best for the student — not what’s trending or paid for. <br>
 
-    <section>
-      <h2>🎯 Our Mission</h2>
-      <p>To empower students with <strong>accurate information</strong>, <strong>genuine reviews</strong>, so they can confidently select the best college for their future.</p>
-    </section>
+<strong>Transparency & Truth:</strong>
+We believe in showing the real picture. From placements to infrastructure, our data is verified and not sugar-coated. <br>
 
-    <section>
-      <h2> 🎓 What We Do</h2>
-      <ul>
-        <li>Our mission is to simplify the college admission process through detailed and trustworthy guidance. On our website “collegesujhav.in” you’ll find</li>
-        <li>✅College Overview</li>
-        <li>✅ Course & Seat Matrix Information</li>
-        <li>✅ Fee Structures</li>
-        <li>✅ Admission Procedure</li>
-        <li>✅ Cutoff</li>
-        <li>✅ Facilities Overview</li>
-        <li>✅ Admission Requirements</li>
-      </ul>
-    </section>
+<strong>Simplicity Over Noise:</strong>
+With thousands of colleges and complex processes, we make it simple to understand and act — even if you’re the first in your family to go to college. <br>
 
-    <section>
-      <h2>🙌 Why Trust Us?</h2>
-      <p><strong>Expert Guidance:</strong> Our team of experienced counselors and faculty members ensures that every student receives personalized support throughout their academic journey.
-      </p>
-
-      <p><strong>Verified Information:</strong> We provide accurate, up-to-date data about colleges, courses, fees, and cut-offs to help students make informed decisions.
-        </p>
-
-      <p><strong>Wide College Network:</strong> We are connected with top private medical colleges across India, helping you access the best options based on your profile.</p>
-    </section>
-
-    <section>
-      <h2>📞 Need Help?</h2>
-      <p>If you’re feeling confused or overwhelmed, don’t worry. Reach out through our <a href="/contact.html">Contact Us</a> page. We’ll be happy to help you find your path.</p>
-    </section>
-    
-    <footer>
-      <p>🧭 Your future starts with the right choice. Let’s make it together.</p>
-    </footer>
-   </div>
+<strong>Empathy:</strong>
+We’ve been there. Confused, stressed, and unsure. Our platform is built to make you feel understood and supported. </p>
   </div>
+
+  <div class="about-image">
+    <img src="/assets/about.jpg" alt="About CollegeSujhav">
+  </div>
+</section>
+
+<section class="abou2-section">
+  <div class="about-image">
+    <img src="/assets/feature2.jpg" alt="About CollegeSujhav">
+  </div>
+
+  <div class="abou2-content">
+    <h2>Why You Should Trust Us CollegeSujhav</h2>
+    <p>A Leading Education Consultancy In India, CollegeAddmission Has Successfully Placed Thousands Of Students In Many Illustrious Universities All Over The World – A Feat That Can Be Ascribed To Our Methodical Mapping Of Geographical Locations, Institutions And Courses As Appropriate To The Applicant’s Profile.</p>
+    <p>We are a team of experienced counselors and faculty members who provide personalized support throughout your academic journey. Our verified information ensures you have access to accurate, up-to-date data about colleges, courses, fees, and cut-offs to help you make informed decisions.</p>
+    <p>Thousands of students have been successfully placed in numerous prestigious universities across the globe by CollegeSujhav, a leading education consulting firm in India. This accomplishment can be attributed to our meticulous mapping of geographic locations, institutions, and courses that are appropriate for each applicant's profile.
+    </p>
+  </div>
+
+</section>
+
+<section class="courses-section">
+  <h5 class="subtitle">OUR COURSES</h5>
+  <h2 class="main-title">Provide Counseling on Courses</h2>
+
+  <div class="courses-container">
+    <!-- MBBS -->
+    
+    <div class="course-card">
+      <a href="/mbbs.html"></a>
+      <img src="/assets/med.jpg" alt="MBBS Course">
+      <div class="course-content">
+        <h3>MBBS Course: A Comprehensive Guide to Pursuing a Career in Medicine</h3>
+        <div class="course-meta">
+          <span>👨‍⚕️ NEET</span>
+          <span>⭐ 4.5 (250)</span>
+        </div>
+      </div>
+       </a>
+    </div>
+
+    <!-- B.Tech -->
+    <div class="course-card">
+      <a href="/bams.html">
+      <img src="/assets/ayur.jpg" alt="ayurveda Course">
+      <div class="course-content">
+        <h3>BAMS Course: This is a 5.5 years undergraduate program in Ayurveda.</h3>
+        <div class="course-meta">
+          <span>👨‍⚕️ NEET</span>
+          <span>⭐ 4.5 (250)</span>
+        </div>
+      </div>
+      </a>
+    </div>
+    
+
+    <!-- LLB -->
+
+    <div class="course-card">
+      <a href="/bhms.html"></a>
+      <img src="/assets/homoe.jpg" alt="Homoepathy Course">
+      <div class="course-content">
+        <h3>BHMS Course: The BHMS program is a 5.5 undergraduate program.</h3>
+        <div class="course-meta">
+          <span>👨‍⚕️ NEET</span>
+          <span>⭐ 4.5 (250)</span>
+        </div>
+      </div>
+      </a>
+    </div>
+   
+
+    <!-- MBA -->
+    
+    <div class="course-card">
+      <a href="/bds.html"></a>
+      <img src="/assets/dent.jpg" alt="dental Course">
+      <div class="course-content">
+        <h3>BDS Course: This is a professional undergraduate program in dentistry.</h3>
+        <div class="course-meta">
+          <span>👨‍⚕️ NEET</span>
+          <span>⭐ 4.5 (250)</span>
+        </div>
+      </div>
+      </a>
+    </div>
+    
+  </div>
+</section>
 
 <footer class="main-footer">
   <div class="footer-container">

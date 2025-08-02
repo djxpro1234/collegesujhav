@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BAMS Course Detail</title>
+  <link rel="icon" href="/assets/chat.png" type="image/png"/>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/pop.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="/css/header.css" />
+  <script src="/js/pop.js" defer></script>
+
+</head>
+<body>
+
+  <div class="popup-overlay" id="popup">
+  <div class="popup-content">
+    <div class="popup-image"> 
+      <img src="/assets/pop.jpg" alt="Counseling Image" />
+    </div>
+    <div class="popup-box">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Book a Counselling Session</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="220da9cc-85d1-4dcf-9b48-20c6c3e771e3" />
+        
+        <label for="name">Your Name</label>
+        <input type="text" name="name" required placeholder="Enter your name" />
+
+        <label for="email">Your Email</label>
+        <input type="email" name="email" required placeholder="Enter your email" />
+
+        <label for="contact">Your Contact Number</label>
+        <input type="text" name="contact" required placeholder="Enter your contact number" />
+
+        <label for="Course">Your Course</label>
+        <select id="Course" name="Course" required>
+          <option value="" disabled selected hidden>Select your branch</option>
+          <option value="MBBS">MBBS</option>
+          <option value="BDS">BDS</option>
+          <option value="BAMS">BAMS</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <input type="hidden" name="redirect" value="/welcome.html" />
+      </form>
+    </div>
+  </div>
+  </div>  
+
+  <!-- Header -->
+
+<header class="site-header">
+  <div class="container">
+    <a href="/index.html" class="logo">
+      <img src="/assets/logo.png" alt="College Admissions Logo">
+    </a>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li class="dropdown">
+          <button class="dropdown-toggle">Courses</button>
+          <ul class="dropdown-menu">
+            <li><a href="/mbbs.html">MBBS</a></li>
+            <li><a href="/bds.html">BDS</a></li>
+            <li><a href="/bams.html">BAMS</a></li>
+            <li><a href="/bhms.html">BHMS</a></li>
+          </ul>
+        </li>
+        <li><a href="/college.html">Colleges</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="course-detail-container">
+
+  <!-- Left Section -->
+  <div class="course-content">
+    <h5 class="breadcrumb">Course Detail</h5>
+    <h1 class="main-heading">BAMS</h1>
+    <img src="/assets/header.jpg" alt="MBBS Students" class="banner-img"/>
+
+<h3>BAMS Course: Your Gateway to a Career in Ayurvedic Medicine</h3>
+<p>Bachelor of Ayurvedic Medicine and Surgery (BAMS) is a professional degree focused on the study of traditional Indian Ayurvedic medicine. It combines ancient healing science with modern medical principles, providing students with a unique and holistic approach to health care.</p>
+
+<h3>Eligibility Criteria for BAMS</h3>
+<p>To be eligible for BAMS, candidates must have completed their 10+2 with Physics, Chemistry, and Biology as core subjects. They must also qualify in NEET (National Eligibility cum Entrance Test). A minimum of 50% marks in the qualifying exam is generally required (relaxations available for reserved categories).</p>
+
+<h3>Admission Process</h3>
+<p>Admission into BAMS is primarily based on NEET scores. After qualifying NEET, candidates participate in state or national-level counseling for seat allotment in Ayurvedic colleges. Some institutes may conduct additional interviews or documentation rounds during final admission.</p>
+
+<h3>BAMS Course Curriculum</h3>
+<p>The BAMS course is structured over a period of 5.5 years, which includes 4.5 years of academic study and 1 year of mandatory internship. The curriculum includes subjects from both Ayurvedic and modern medicine systems.</p>
+
+<h3>Major Subjects in BAMS</h3>
+<p>– Sanskrit and Ayurvedic History<br>
+– Anatomy (Sharir Rachana)<br>
+– Physiology (Sharir Kriya)<br>
+– Dravyaguna (Ayurvedic Pharmacology)<br>
+– Rasashastra (Mineral and Metal Medicine)<br>
+– Agadtantra (Toxicology and Forensic Medicine)<br>
+– Kayachikitsa (General Medicine)<br>
+– Panchakarma (Detoxification Therapies)<br>
+– Shalya Tantra (Surgery)<br>
+– Shalakya Tantra (ENT and Ophthalmology)<br>
+– Prasuti and Stri Roga (Gynecology and Obstetrics)</p>
+
+<h3>Internship</h3>
+<p>The final year includes a compulsory rotatory internship in Ayurveda hospitals, dispensaries, or clinics. Students get hands-on training in diagnostics, patient care, and therapeutic procedures like Panchakarma.</p>
+
+<h3>Course Duration and Fees</h3>
+<p>The total duration of the BAMS course is 5.5 years (4.5 academic years + 1 year internship). Fees vary based on the institution. Government colleges charge lower fees compared to private colleges, where the range can go up to ₹1.5–3 lakh per year.</p>
+
+<h3>Career Opportunities after BAMS</h3>
+<p>BAMS graduates have a wide range of career options:</p>
+<p>– Practice as Ayurvedic doctors<br>
+– Work in government or private Ayurvedic hospitals<br>
+– Start their own Ayurvedic clinic or Panchakarma center<br>
+– Pursue post-graduation in Ayurveda (MD/MS)<br>
+– Work in pharmaceutical companies or herbal product development<br>
+– Serve in health & wellness resorts or research sectors</p>
+
+
+</p>
+
+</div>
+
+  <!-- Right Sidebar -->
+  <aside class="sidebar">
+    <div class="features-box">
+      <h3>Course Features</h3>
+      <p><strong>College Type:</strong> Private</p>
+      <p><strong>Rating:</strong> 4.5</p>
+      <p><strong>Entrance Exam:</strong> NEET</p>
+      <p><strong>Skill Level:</strong> All Level</p>
+      <p><strong>Duration:</strong> 5 Years</p>
+      <p><strong>Language:</strong> English</p>
+      <button>Contact Us</button>
+    </div>
+
+    <div class="recent-courses">
+      <h3>Recent Courses</h3>
+      <a href="/mbbs.html">
+      <div class="mini-card">
+        <img src="/assets/med.jpg" alt="MBBS">
+        <div>
+          <h4>MBBS</h4>
+          <p>⭐ 4.5 NEET</p>
+        </div>
+      </div>
+      </a>
+      <a href="/bds.html">
+      <div class="mini-card">
+        <img src="/assets/dent.jpg" alt="BDS">
+        <div>
+          <h4>BDS</h4>
+          <p>⭐ 4.5 NEET</p>
+        </div>
+      </div>
+      </a>
+      <a href="/bhms.html">
+      <div class="mini-card">
+        <img src="/assets/homoe.jpg" alt="Homoeopathy">
+        <div>
+          <h4>Homoeopathy</h4>
+          <p>⭐ 4.5 NEET</p>
+        </div>
+      </div>
+      </a>
+    </div>
+  </aside>
+
+</div>
+
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-col2">
+      <a href="/index.html">
+      <img src="/assets/logo.png" alt="CollegeSujhav Logo">
+      </a>
+      <p>Since its founding in 2020, CollegeSujhav has grown into one of India’s trusted platforms <br> for student counseling and college selection services. Thousands of students who explored <br> colleges through CollegeSujhav have successfully secured admissions in top institutions across India. <br>
+        These students are now thriving in their chosen fields. We proudly partner with reputed universities and <br> medical colleges, offering accurate guidance and authentic admission support.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Get In Touch</h3>
+      <hr>
+      <p>Noida<br>Kanpur, MadhyaPradesh<br>Patna and Assam, India</p>
+      <p><a href="mailto:support@collegesujhav.in"><strong>support@collegesujhav.in</strong></a></p>
+      <p><strong>+91-8810342139</strong></p>
+    </div>
+
+    <div class="footer-col">
+      <h3>QuickLinks</h3>
+      <hr>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/terms.html">Terms</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Socials</h3>
+      <hr>
+      <div class="social-icons">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png"/></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png"/></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- WhatsApp Button -->
+<a href="https://wa.me/918810342139" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
+</a>
+
+
+</body>
+</html>
