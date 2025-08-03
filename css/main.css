@@ -310,3 +310,32 @@ body {
     font-size: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .about-section,
+  .values-section {
+    text-align: left;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .about-section h2,
+  .values-section h2 {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .about-section p,
+  .values-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .about-section,
+  .values-section {
+    display: block;
+    width: 100%;
+  }
+}
+
