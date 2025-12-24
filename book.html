@@ -11,43 +11,6 @@
 </head>
 <body>
 
-  <div class="popup-overlay" id="popup">
-  <div class="popup-content">
-    <div class="popup-image"> 
-      <img src="/assets/pop.jpg" alt="Counseling Image" />
-    </div>
-    <div class="popup-box">
-      <span class="close-btn" onclick="closePopup()">&times;</span>
-      <h2>Book a Counselling Session</h2>
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="220da9cc-85d1-4dcf-9b48-20c6c3e771e3" />
-        
-        <label for="name">Your Name</label>
-        <input type="text" name="name" required placeholder="Enter your name" />
-
-        <label for="email">Your Email</label>
-        <input type="email" name="email" required placeholder="Enter your email" />
-
-        <label for="contact">Your Contact Number</label>
-        <input type="text" name="contact" required placeholder="Enter your contact number" />
-
-        <label for="Course">Your Course</label>
-        <select id="Course" name="Course" required>
-          <option value="" disabled selected hidden>Select your branch</option>
-          <option value="MBBS">MBBS</option>
-          <option value="MBA">MBA</option>
-          <!-- <option value="BDS">BDS</option>
-          <option value="BAMS">BAMS</option>
-          <option value="BHMS">BHMS</option> -->
-        </select>
-
-        <button type="submit">Submit</button>
-        <input type="hidden" name="redirect" value="/welcome.html" />
-      </form>
-    </div>
-  </div>
-  </div>  
-
     <section class="contact-section">
      <div class="contact-container">
       <h1>📩 Book-Conselling CollegeSujhav</h1>
