@@ -11,31 +11,42 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container">
-    <a href="/index.html" class="logo">
-      <img src="/assets/logo.png" alt="College Admissions Logo">
-    </a>
-    <button class="menu-toggle" id="menuToggle">☰</button>
-    <nav class="nav-menu" id="navMenu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="/about.html">About Us</a></li>
-        <li class="dropdown">
-          <button class="dropdown-toggle">Courses</button>
-          <ul class="dropdown-menu">
-            <li><a href="/mbbs.html">MBBS</a></li>
-            <li><a href="/bds.html">BDS</a></li>
-            <li><a href="/bams.html">BAMS</a></li>
-            <li><a href="/bhms.html">BHMS</a></li>
-          </ul>
-        </li>
-        <li><a href="/college.html">Colleges</a></li>
-        <li><a href="/contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+  <div class="popup-overlay" id="popup">
+  <div class="popup-content">
+    <div class="popup-image"> 
+      <img src="/assets/pop.jpg" alt="Counseling Image" />
+    </div>
+    <div class="popup-box">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Book a Counselling Session</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="220da9cc-85d1-4dcf-9b48-20c6c3e771e3" />
+        
+        <label for="name">Your Name</label>
+        <input type="text" name="name" required placeholder="Enter your name" />
+
+        <label for="email">Your Email</label>
+        <input type="email" name="email" required placeholder="Enter your email" />
+
+        <label for="contact">Your Contact Number</label>
+        <input type="text" name="contact" required placeholder="Enter your contact number" />
+
+        <label for="Course">Your Course</label>
+        <select id="Course" name="Course" required>
+          <option value="" disabled selected hidden>Select your branch</option>
+          <option value="MBBS">MBBS</option>
+          <option value="MBA">MBA</option>
+          <!-- <option value="BDS">BDS</option>
+          <option value="BAMS">BAMS</option>
+          <option value="BHMS">BHMS</option> -->
+        </select>
+
+        <button type="submit">Submit</button>
+        <input type="hidden" name="redirect" value="/welcome.html" />
+      </form>
+    </div>
   </div>
-</header>
+  </div>  
 
     <section class="contact-section">
      <div class="contact-container">

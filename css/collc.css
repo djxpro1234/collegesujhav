@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fb;
+  margin: 0;
+}
+
+.ccontainer {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 400px;
+  margin-right: 400px;
+  gap: 20px;
+}
+
+/* LEFT CONTENT */
+.ccontent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.college-img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.apply-btn {
+  background: #28a745;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.form-box {
+  background: #6ea8dc;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+.form-box input,
+.form-box select,
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.form-box button {
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+table th {
+  background: #f0f0f0;
+  text-align: left;
+}
+
+/* SIDEBAR */
+.sidebar .box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.recent-courses {
+  margin-top: 40px;
+}
+
+.recent-courses h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.mini-card {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 15px;
+  border: #0a0a23 2px solid;
+  border-radius: 10px;
+}
+
+.mini-card img {
+  width: 103px;
+  height: 103px;
+  border-radius: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.features-box {
+  background: #1e3a8a;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.features-box h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.features-box button {
+  margin-top: 20px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

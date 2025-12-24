@@ -170,19 +170,16 @@ body {
 }
 
 .courses-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 
 .course-card {
-  flex: 1 1 calc(25% - 20px);
   background: #000;
   color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  position: relative;
   transition: transform 0.3s ease;
 }
 
@@ -317,5 +314,17 @@ body {
     display: block;
     width: 100%;
   }
+  
 }
 
+@media (max-width: 1024px) {
+  .courses-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .courses-container {
+    grid-template-columns: 1fr;
+  }
+}

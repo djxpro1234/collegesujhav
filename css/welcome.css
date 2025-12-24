@@ -29,7 +29,7 @@ body {
 }
 
 .welcome-container h1 span {
-  color: #ff914d;
+  color: #f399b9;
 }
 
 .welcome-container p {
@@ -51,7 +51,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #ff914d;
+  background-color: #e4c2d2;
 }
 
 /* Responsive adjustments for tablets and smaller devices */

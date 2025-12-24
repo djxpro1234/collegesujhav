@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> SIMSHREE Admission</title>
+<link rel="stylesheet" href="/css/collc.css" />
+<link rel="stylesheet" href="/css/pop.css" />
+<link rel="stylesheet" href="/css/footer.css" />
+<link rel="stylesheet" href="/css/header.css" />
+<script src="/js/pop.js" defer></script>
+</head>
+<body>
+
+  <div class="popup-overlay" id="popup">
+  <div class="popup-content">
+    <div class="popup-image"> 
+      <img src="/assets/pop.jpg" alt="Counseling Image" />
+    </div>
+    <div class="popup-box">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Book a Counselling Session</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="220da9cc-85d1-4dcf-9b48-20c6c3e771e3" />
+        
+        <label for="name">Your Name</label>
+        <input type="text" name="name" required placeholder="Enter your name" />
+
+        <label for="email">Your Email</label>
+        <input type="email" name="email" required placeholder="Enter your email" />
+
+        <label for="contact">Your Contact Number</label>
+        <input type="text" name="contact" required placeholder="Enter your contact number" />
+
+        <label for="Course">Your Course</label>
+        <select id="Course" name="Course" required>
+          <option value="" disabled selected hidden>Select your branch</option>
+          <option value="MBBS">MBBS</option>
+          <option value="MBA">MBA</option>
+          <!-- <option value="BDS">BDS</option>
+          <option value="BAMS">BAMS</option>
+          <option value="BHMS">BHMS</option> -->
+        </select>
+
+        <button type="submit">Submit</button>
+        <input type="hidden" name="redirect" value="/welcome.html" />
+      </form>
+    </div>
+  </div>
+  </div>  
+
+  <!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <a href="/index.html" class="logo">
+      <img src="/assets/logo.png" alt="College Admissions Logo">
+    </a>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li class="dropdown">
+          <button class="dropdown-toggle">Courses</button>
+          <ul class="dropdown-menu">
+            <li><a href="/mbbs.html">MBBS</a></li>
+            <li><a href="/bds.html">BDS</a></li>
+            <li><a href="/bams.html">BAMS</a></li>
+            <li><a href="/bhms.html">BHMS</a></li>
+            <li><a href="/mba.html">MBA</a></li>
+          </ul>
+        </li>
+        <li><a href="/college.html">Colleges</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="ccontainer">
+  <main class="ccontent">
+  <!-- COLLEGE IMAGE -->
+  <img src="/assets/simsree.jpg" class="college-img" alt="SIMSREE Mumbai">
+
+  <!-- TITLE -->
+  <h1>Sydenham Institute of Management Studies, Research and Entrepreneurship Education (SIMSREE), Mumbai</h1>
+
+  <!-- INTRO -->
+  <p>
+    Sydenham Institute of Management Studies, Research and Entrepreneurship Education (SIMSREE),
+    Mumbai is one of India’s most prestigious government MBA colleges. Established in 1983,
+    SIMSREE is affiliated with the University of Mumbai and is well known for its academic
+    excellence, affordable fee structure, and strong industry connections.
+  </p>
+
+  <p>
+    SIMSREE Mumbai is a top preference among MBA/MMS aspirants due to its exceptional
+    return on investment (ROI), experienced faculty, and consistent placement record
+    across reputed national and multinational companies.
+  </p>
+
+  <!-- ADMISSION FORM -->
+  <div class="form-box">
+    <h3>Know more about MBA/MMS admission</h3>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="220da9cc-85d1-4dcf-9b48-20c6c3e771e3">
+      <input type="hidden" name="college" value="SIMSREE Mumbai">
+
+      <input type="text" name="name" required placeholder="Full Name">
+      <input type="text" name="phone" required placeholder="Phone Number">
+
+      <select name="course">
+        <option>Select Course</option>
+        <option>MMS</option>
+        <option>MBA</option>
+      </select>
+
+      <select name="budget">
+        <option>Select Your Budget</option>
+        <option>1 – 5 Lakh</option>
+        <option>5 – 10 Lakh</option>
+      </select>
+
+      <button type="submit">Submit</button>
+      <input type="hidden" name="redirect" value="/welcome.html">
+    </form>
+  </div>
+
+  <!-- QUICK OVERVIEW -->
+  <h2>Quick Overview of SIMSREE Mumbai</h2>
+  <table>
+    <tr><th>Institute Name</th><td>SIMSREE Mumbai</td></tr>
+    <tr><th>Established</th><td>1983</td></tr>
+    <tr><th>Affiliated With</th><td>University of Mumbai</td></tr>
+    <tr><th>Courses Offered</th><td>MMS / MBA / PhD</td></tr>
+    <tr><th>Entrance Exam</th><td>MAH MBA CET / CAT / CMAT</td></tr>
+    <tr><th>Location</th><td>Mumbai, Maharashtra</td></tr>
+  </table>
+
+  <!-- COURSES OFFERED -->
+  <section class="college-section">
+    <h2>Courses Offered at SIMSREE Mumbai</h2>
+    <ul class="course-list">
+      <li>MMS (Master of Management Studies)</li>
+      <li>MBA</li>
+      <li>PhD</li>
+    </ul>
+
+    <!-- FEES -->
+    <h2>SIMSREE MBA / MMS Fees 2025</h2>
+    <div class="table-responsive">
+      <table class="fees-table">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>General Fees</th>
+            <th>Reserved Category</th>
+            <th>Management / NRI Quota Fees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MMS / MBA</td>
+            <td>₹ 1,40,000 (Approx)</td>
+            <td>As per Govt Norms</td>
+            <td>₹ 8 – 12 Lakh (Approx)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- NRI QUOTA -->
+    <h2>SIMSREE NRI / Management Quota Admission</h2>
+    <p>
+      SIMSREE Mumbai offers limited supernumerary seats under the
+      Management and NRI quota. These seats are available for NRI,
+      OCI/PIO, and foreign national candidates.
+    </p>
+
+    <p>
+      Admission through the NRI quota involves lower competition and is
+      based on academic background and eligibility criteria set by the institute.
+    </p>
+
+    <p>
+      For complete guidance regarding SIMSREE NRI quota admission,
+      please fill out the enquiry form above. Our admission experts will
+      contact you shortly.
+    </p>
+
+    <!-- PLACEMENTS -->
+    <h2>SIMSREE Placement Statistics</h2>
+    <table class="info-table">
+      <tr>
+        <th>Particulars</th>
+        <th>CTC (in LPA)</th>
+      </tr>
+      <tr>
+        <td>Highest Package</td>
+        <td>₹ 20.00 LPA</td>
+      </tr>
+      <tr>
+        <td>Average Package</td>
+        <td>₹ 14.00 LPA</td>
+      </tr>
+      <tr>
+        <td>Median Package</td>
+        <td>₹ 12.00 LPA</td>
+      </tr>
+      <tr>
+        <td>Top Recruiters</td>
+        <td>Banks, Consulting, FMCG, IT</td>
+      </tr>
+    </table>
+
+    <!-- ADMISSION DATES -->
+    <h2>SIMSREE Admission Dates 2026</h2>
+    <table class="info-table">
+      <tr>
+        <th>Event</th>
+        <th>Date</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>MAH MBA CET Notification</td>
+        <td>December 2025</td>
+        <td>Expected</td>
+      </tr>
+      <tr>
+        <td>MAH MBA CET Exam</td>
+        <td>April 2026</td>
+        <td>Official</td>
+      </tr>
+      <tr>
+        <td>CAP Registration</td>
+        <td>June – July 2026</td>
+        <td>Tentative</td>
+      </tr>
+      <tr>
+        <td>College Allotment</td>
+        <td>August 2026</td>
+        <td>Tentative</td>
+      </tr>
+    </table>
+
+    <!-- RECRUITERS -->
+    <h2>Top Recruiters at SIMSREE</h2>
+    <div class="recruiters-grid">
+      <img src="/assets/req.png" alt="SIMSREE Recruiters">
+    </div>
+
+    <!-- ELIGIBILITY -->
+    <h2>SIMSREE Mumbai Eligibility Criteria</h2>
+    <table class="info-table">
+      <tr>
+        <th>Requirement</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Academic Qualification</td>
+        <td>Bachelor’s degree from a recognized university</td>
+      </tr>
+      <tr>
+        <td>Minimum Marks</td>
+        <td>50% (45% for reserved category)</td>
+      </tr>
+      <tr>
+        <td>Entrance Exam</td>
+        <td>MAH MBA CET / CAT / CMAT</td>
+      </tr>
+    </table>
+  </section>
+</main>
+
+<!-- Right Sidebar -->
+  <aside class="sidebar">
+    <div class="features-box">
+      <h3>Course Features</h3>
+      <p><strong>College Type:</strong> Private</p>
+      <p><strong>Rating:</strong> 4.5</p>
+      <p><strong>Entrance Exam:</strong> NEET</p>
+      <p><strong>Skill Level:</strong> All Level</p>
+      <p><strong>Duration:</strong> 5 Years</p>
+      <p><strong>Language:</strong> English</p>
+      <a href="/contact.html"><button>Contact Us</button></a>
+    </div>
+
+    <div class="recent-courses">
+      <h3>Recent Courses</h3>
+      <a href="/bams.html">
+      <div class="mini-card">
+        <img src="/assets/ayur.jpg" alt="BAMS">
+        <div>
+          <h4>BAMS</h4>
+          <p>⭐ 4.5 NEET</p>
+        </div>
+      </div>
+      </a>
+      <a href="/bds.html">
+      <div class="mini-card">
+        <img src="/assets/dent.jpg" alt="BDS">
+        <div>
+          <h4>BDS</h4>
+          <p>⭐ 4.5 NEET</p>
+        </div>
+      </div>
+      </a>
+      <a href="/bhms.html">
+      <div class="mini-card">
+        <img src="/assets/homoe.jpg" alt="Homoeopathy">
+        <div>
+          <h4>Homoeopathy</h4>
+          <p>⭐ 4.5 NEET</p>
+        </div>
+      </div>
+      </a>
+    </div>
+  </aside>
+</div>
+
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="footer-col2">
+      <a href="/index.html">
+      <img src="/assets/logo.png" alt="CollegeSujhav Logo">
+      </a>
+      <p>Since its founding in 2020, CollegeSujhav has grown into one of India’s trusted platforms <br> for student counseling and college selection services. Thousands of students who explored <br> colleges through CollegeSujhav have successfully secured admissions in top institutions across India. <br>
+        These students are now thriving in their chosen fields. We proudly partner with reputed universities and <br> medical colleges, offering accurate guidance and authentic admission support.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Get In Touch</h3>
+      <hr>
+      <p>Noida<br>Bhopal, Nagpur<br>Bangaluru and Kolkata</p>
+      <p><a href="mailto:support@collegesujhav.in"><strong>support@collegesujhav.in</strong></a></p>
+      <p><strong>+91-8810342139</strong></p>
+    </div>
+
+    <div class="footer-col">
+      <h3>QuickLinks</h3>
+      <hr>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/terms.html">Terms</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Socials</h3>
+      <hr>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/16vXd5F3JV/"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook.png"/></a>
+        <a href="https://wa.me/918810342139"><img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png"/></a>
+        <a href="https://www.instagram.com/collegesujhav?igsh=dnhwczR0dXRldDQ3"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram.png"/></a>
+        <a href="https://www.threads.com/@collegesujhav"><img src="https://img.icons8.com/ios-filled/24/ffffff/threads.png"/></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/918810342139" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <!-- call button -->
+  <a href="tel:8810342139" class="call-float" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Call">
+  </a>
+</footer>
+
+</body>
+</html>

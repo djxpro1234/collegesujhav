@@ -1,10 +1,10 @@
-  .blog-layout {
+.blog-layout {
   display: flex;
   gap: 30px;
   padding: 40px;
   font-family: 'Outfit', sans-serif;
-  margin-left: 350px;
-  margin-right: 350px;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .main-posts {
@@ -18,7 +18,7 @@
   background-color: #fce2e2;
   padding: 25px;
   box-shadow: 10px 4px 10px rgba(0,0,0,0.08);
-  border-radius: 0px;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -73,58 +73,320 @@
   border-radius: 5px;
 }
 
-.sidebar {
-  flex: 1;
-  background-color: #fce2e2;
-  padding: 25px;
-  margin-top: 84px;
-  box-shadow: 10px 4px 10px rgba(0,0,0,0.08);
-  border-radius: 0px;
-  height: fit-content;
+.features-box {
+  background: #542e84;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.sidebar h3 {
-  background-color: #3a4bd4;
-  color: white;
-  text-align: center;
-  padding: 12px;
-  border-radius: 8px;
+.features-box h3 {
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.features-box button {
+  margin-top: 20px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.sidebar li {
-  display: flex;
-  gap: 10px;
+.recent-courses {
+  margin-top: 40px;
+}
+
+.recent-courses h3 {
+  font-size: 18px;
   margin-bottom: 15px;
-  font-size: 16px;
+}
+
+.mini-card {
+  background-color: #ffffff;
+  display: flex;
   align-items: center;
+  gap: 6px;
+  margin-bottom: 15px;
+  border: #0a0a23 2px solid;
+  border-radius: 10px;
 }
 
-.sidebar li a {
-  text-decoration: none;
-  color: #000000c6;
-  transition: color 0.3s;
-}
-
-.sidebar li a:hover {
-  color: #4d8395;
-}
-
-.sidebar li img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
+.mini-card img {
+  width: 103px;
+  height: 103px;
   border-radius: 6px;
+}
+
+.recent-courses a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.features-box a {
+    text-decoration: none;
+    color: #fffcfc;
+    transition: color 0.3s ease;
+}
+
+.features-box a:hover {
+    color: #f0c0c0;
 }
 
 .main-posts h1 {
   font-size: 30px;
   color: #000000;
   margin-bottom: 0px;
+}
+
+.hh2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.college-list {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.enquiry{
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
+
+.enquiry a {
+  background-color: #e53935;
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.enquiry a:hover {
+  background-color: #c62828;
+}
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.course-card {
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-content {
+  padding: 20px;
+}
+
+.course-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.course-card a {
+  text-decoration: none;
+}
+
+.courses-section {
+  padding: 60px 30px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("/assets/bach.jpg");
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .course-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .course-card {
+    flex: 1 1 100%;
+  }
+
+  .main-title {
+    font-size: 28px;
+  }
+}
+
+/* =========================
+   LARGE SCREENS (≤ 1400px)
+   ========================= */
+@media (max-width: 1400px) {
+  .blog-layout {
+    padding: 30px;
+  }
+}
+
+/* =========================
+   TABLETS / SMALL LAPTOPS (≤ 1024px)
+   ========================= */
+@media (max-width: 1024px) {
+
+  /* Blog layout */
+  .blog-layout {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  /* Post content */
+  .post-content {
+    flex-direction: column;
+  }
+
+  .post-content img {
+    width: 100%;
+    max-height: 260px;
+  }
+
+  /* Courses grid */
+  .courses-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =========================
+   TABLETS / LARGE PHONES (≤ 768px)
+   ========================= */
+@media (max-width: 768px) {
+
+  .blog-layout {
+    padding: 20px 15px;
+  }
+
+  .main-posts h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .post h2 {
+    font-size: 18px;
+  }
+
+  /* Sidebar boxes full width */
+  .recent-courses {
+    text-align: center;
+    width: 100%;
+  }
+  .features-box {
+    width: 90%;
+  }
+  /* Courses grid */
+  .courses-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* College list */
+  .college-list {
+    gap: 40px;
+  }
+}
+
+/* =========================
+   MOBILE PHONES (≤ 480px)
+   ========================= */
+@media (max-width: 480px) {
+
+  /* Blog layout */
+  .blog-layout {
+    padding: 15px 10px;
+  }
+
+  /* Post cards */
+  .post {
+    padding: 18px;
+  }
+
+  .post-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .post-content button,
+  .features-box button,
+  .enquiry a {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Mini cards */
+  .mini-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .mini-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Courses grid */
+  .courses-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Headings */
+  .main-posts h1 {
+    font-size: 22px;
+  }
+
+  .course-content h3 {
+    font-size: 16px;
+  }
 }
